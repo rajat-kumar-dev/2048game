@@ -1,0 +1,62 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  background-color: #bbada0;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.grid-child {
+  width: 80px;
+  aspect-ratio: 1;
+  border-radius: 5px;
+  background-color: #d6cdc4;
+}
+.cell {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  height: 100%;
+  align-content: center;
+  border-radius: inherit;
+}
+
+.btn-container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.btn-up {
+  margin-block: 10px;
+}
+.btn-down {
+  margin-block: 10px;
+}
+.spawnCell {
+  scale: 0;
+  animation: spwanCellAnim 0.2s ease-in-out forwards;
+}
+
+@keyframes spwanCellAnim {
+  100% {
+    scale: 1;
+  }
+}
+/*
+d6cdc4
+eee4da
+ede0c8
+f2b179
+f59563
+f67c5f
+f65e3b
+edcf72
+
+*/
